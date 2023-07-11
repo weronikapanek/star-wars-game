@@ -1,5 +1,7 @@
 # StarWarsGame
 
+[![Zrzut-ekranu-2023-07-11-o-17-56-04.png](https://i.postimg.cc/q7dVJ6H4/Zrzut-ekranu-2023-07-11-o-17-56-04.png)](https://postimg.cc/w1FbFvBG) 
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.11.
 
 ## Development server

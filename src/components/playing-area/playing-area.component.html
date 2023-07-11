@@ -1,0 +1,29 @@
+<div class="container">
+  <button (click)="drawPeople()" [disabled]="charactersArray.length === 0">Star game between people!</button>
+  <button (click)="drawStarships()" [disabled]="starshipsArray.length === 0">Star game between starships!</button>
+
+  <div class="container__result">
+    <div *ngIf="!winner">Play the game to find a winner</div>
+    <div *ngIf="winner === 'P1' || winner === 'P2'">The winner in this game was... {{winner}}</div>
+    <div *ngIf="winner === 'draw'">No winner in this round</div>
+  </div>
+
+  <div class="container__players-scores">
+    <div>P1 score is {{player1Score}}</div>
+    <div>P2 score is {{player2Score}}</div>
+  </div>
+
+  <div class="container__cards-container">
+    <div class="container__cards-container-card" *ngIf="card1 as card">
+      <div *ngIf="card.name" class="container__person-card-name">Name: {{card.name}}</div>
+      <div *ngIf="card.mass" class="container__person-card-mass">Mass: {{card?.mass}}</div>
+      <div *ngIf="card.crew" class="container__person-card-crew">Crew: {{card?.crew}}</div>
+    </div>
+
+    <div class="container__cards-container-card" *ngIf="card2 as card">
+      <div *ngIf="card.name" class="container__person-card-name">Name: {{card.name}}</div>
+      <div *ngIf="card.mass" class="container__person-card-mass">Mass: {{card?.mass}}</div>
+      <div *ngIf="card.crew" class="container__person-card-crew">Crew: {{card?.crew}}</div>
+    </div>
+  </div>
+</div>

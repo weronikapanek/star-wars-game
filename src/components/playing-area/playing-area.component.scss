@@ -1,0 +1,61 @@
+.container {
+  min-height: 85vh;
+  background-color: black;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+
+  button {
+    padding: 10px 15px;
+    background-color: black;
+    border: 3px solid yellow;
+    color: yellow;
+    margin: 15px;
+    border-radius: 5px;
+    width: 280px;
+    text-transform: uppercase;
+
+    &:disabled {
+      background-color: grey;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__result {
+    margin-bottom: 20px;
+  }
+
+  &__players-scores {
+    display: flex;
+    justify-content: space-around;
+
+    div {
+      padding: 10px 15px;
+      border: 3px solid yellow;
+      border-radius: 5px;
+    }
+  }
+
+  &__cards-container {
+    display: flex;
+    justify-content: center;
+
+    &-card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: yellow;
+
+      width: 250px;
+      height: 300px;
+      border: 3px solid yellow;
+      padding: 10px 15px;
+      margin: 15px;
+      border-radius: 5px;
+    }
+  }
+}

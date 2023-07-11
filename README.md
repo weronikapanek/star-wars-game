@@ -7,6 +7,9 @@ https://github.com/weronikapanek/star-wars-game/assets/56980017/426462ce-8f2f-4d
 In the project directory, you can run:
 
 npm install
+
 npm start
+
 Runs the app in the development mode.
+
 Open http://localhost:4200 to view it in the browser.
